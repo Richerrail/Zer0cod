@@ -121,17 +121,13 @@ zer0cod
 ```
 
 Remarques:
-- Si vous utilisez le dépôt upstream (k00/zer0cod) remplacez l'URL par `https://github.com/k00/zer0cod/releases`.
 - Adaptez le nom de fichier (`_amd64.deb` → `_arm64.deb`) selon votre architecture.
-
-
 ```
 
 ### Autres plateformes
 > **Windows / macOS** : Le backend PTY utilise `nix` (Linux-only).  
-> Une version cross-platform arrive avec `portable-pty` (voir [#12](https://github.com/k00/zer0cod/issues/12)).  
+> Une version cross-platform arrive avec `portable-pty` .  
 > En attendant, vous pouvez compiler depuis les sources sur macOS (terminal simulé).
-
 ---
 
 ## ⚙️ Configuration IA
