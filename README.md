@@ -8,7 +8,7 @@ La plupart des IDE sont **lourds, lents, et vous enferment** dans leur écosyst�
 Zer0Cod fait le pari inverse : **zéro surcharge, zéro télémétrie, zéro verrouillage**.
 
 > **Ce n'est qu'un début.**  
-> Cet IDE est conçu pour devenir **l'interface native de mon IA from scratch** — un modèle entraîné de zéro, sans dépendre d'API externes. Aujourd'hui, il vous donne un éditeur, un terminal e[...] 
+> Cet IDE est conçu pour devenir **l'interface native de mon IA from scratch** — un modèle entraîné de zéro, sans dépendre d'API externes. Aujourd'hui, il vous donne un éditeur, un termin[...]
 
 ---
 
@@ -71,16 +71,46 @@ timeline
 ## 🛠 Installation
 
 ### Linux (`.deb` — recommandé)
+
+Option recommandée — installez la release pré-compilée (.deb) si elle existe pour votre architecture.
+
+1) Vérifiez la page des releases et choisissez l'asset correspondant à votre architecture (amd64 / arm64):
+
+   https://github.com/Richerrail/Zer0cod/releases
+
+2) Télécharger l'asset (remplacez `<tag>` et `<version>` si nécessaire) :
+
 ```bash
-# Télécharger la dernière release
-wget https://github.com/k00/zer0cod/releases/latest/download/zer0cod_0.1.0_amd64.deb
+# Exemple simple (remplacez <tag> ou <version> si le nom du fichier diffère)
+wget https://github.com/Richerrail/Zer0cod/releases/download/<tag>/zer0cod_<version>_amd64.deb -O zer0cod_latest_amd64.deb
 
-# Installer
-sudo apt install ./zer0cod_0.1.0_amd64.deb
-
-# Lancer
-zer0cod
+# ou avec curl
+curl -L -o zer0cod_latest_amd64.deb "https://github.com/Richerrail/Zer0cod/releases/download/<tag>/zer0cod_<version>_amd64.deb"
 ```
+
+3) Installer le paquet (.deb) :
+
+```bash
+# méthode recommandée (apt gère les dépendances)
+sudo apt install ./zer0cod_latest_amd64.deb
+
+# ou, si vous préférez dpkg:
+sudo dpkg -i zer0cod_latest_amd64.deb
+# puis corrigez les dépendances manquantes
+sudo apt-get install -f
+```
+
+4) Lancer Zer0Cod :
+
+```bash
+# depuis le terminal
+zer0cod
+# ou via le lanceur d'applications (selon votre environnement de bureau)
+```
+
+Remarques:
+- Si vous utilisez le dépôt upstream (k00/zer0cod) remplacez l'URL par `https://github.com/k00/zer0cod/releases`.
+- Vérifiez l'architecture (uname -m) et choisissez le fichier `.deb` adapté (amd64 vs arm64).
 
 ### Depuis les sources (dev)
 ```bash
