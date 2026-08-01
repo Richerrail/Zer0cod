@@ -1,4 +1,4 @@
-## 384 Présentation
+## Présentation
 
 ![Présentation](asset/presentation.jpg)
 
@@ -8,7 +8,7 @@ La plupart des IDE sont **lourds, lents, et vous enferment** dans leur écosyst�
 Zer0Cod fait le pari inverse : **zéro surcharge, zéro télémétrie, zéro verrouillage**.
 
 > **Ce n'est qu'un début.**  
-> Cet IDE est conçu pour devenir **l'interface native de mon IA from scratch** — un modèle entraîné de zéro, sans dépendre d'API externes. Aujourd'hui, il vous donne un éditeur, un termin[...]
+> Cet IDE est conçu pour devenir **l'interface native de mon IA from scratch** — un modèle entraîné de zéro, sans dépendre d'API externes. Aujourd'hui, il vous donne un éditeur, un terminal e[...] 
 
 ---
 
@@ -48,7 +48,7 @@ timeline
             : Marketplace plugins communautaires
 ```
 
-> **Vision finale** : Vous installez Zer0Cod → vous avez un IDE complet **ET** une IA qui comprend votre codebase, s'entraîne sur vos patterns, et tourne 100% local. Pas de cloud. Pas de compte[...]
+> **Vision finale** : Vous installez Zer0Cod → vous avez un IDE complet **ET** une IA qui comprend votre codebase, s'entraîne sur vos patterns, et tourne 100% local. Pas de cloud. Pas de compte. Ju[...] 
 
 ---
 
@@ -56,7 +56,7 @@ timeline
 
 ### Thème Modern (défaut)
 
-![Thème Modern](asset/moderne.png)
+![Thème Modern](asset/modern.png)
 
 ### Thème Retro CRT
 
@@ -64,7 +64,7 @@ timeline
 
 ### Chat IA + Complétion Inline
 
-![Chat IA](asset/ia.png)
+![Chat IA](asset/IA.png)
 
 ---
 
