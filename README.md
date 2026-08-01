@@ -1,10 +1,14 @@
+## 384 Présentation
+
+![Présentation](asset/presentation.jpg)
+
 ## ✨ Pourquoi Zer0Cod ?
 
 La plupart des IDE sont **lourds, lents, et vous enferment** dans leur écosystème.  
 Zer0Cod fait le pari inverse : **zéro surcharge, zéro télémétrie, zéro verrouillage**.
 
 > **Ce n'est qu'un début.**  
-> Cet IDE est conçu pour devenir **l'interface native de mon IA from scratch** — un modèle entraîné de zéro, sans dépendre d'API externes. Aujourd'hui, il vous donne un éditeur, un terminal et un chat multi-LLM. Demain, il sera le **pont direct vers une IA locale, privée, et entièrement contrôlée par vous**.
+> Cet IDE est conçu pour devenir **l'interface native de mon IA from scratch** — un modèle entraîné de zéro, sans dépendre d'API externes. Aujourd'hui, il vous donne un éditeur, un terminal e[...] 
 
 ---
 
@@ -44,7 +48,7 @@ timeline
             : Marketplace plugins communautaires
 ```
 
-> **Vision finale** : Vous installez Zer0Cod → vous avez un IDE complet **ET** une IA qui comprend votre codebase, s'entraîne sur vos patterns, et tourne 100% local. Pas de cloud. Pas de compte. Juste vous et votre machine.
+> **Vision finale** : Vous installez Zer0Cod → vous avez un IDE complet **ET** une IA qui comprend votre codebase, s'entraîne sur vos patterns, et tourne 100% local. Pas de cloud. Pas de compte[...]
 
 ---
 
@@ -52,12 +56,15 @@ timeline
 
 ### Thème Modern (défaut)
 
+![Thème Modern](asset/moderne.png)
 
 ### Thème Retro CRT
 
+![Thème Retro CRT](asset/retro.png)
 
 ### Chat IA + Complétion Inline
 
+![Chat IA](asset/ia.png)
 
 ---
 
@@ -77,14 +84,17 @@ zer0cod
 
 ### Depuis les sources (dev)
 ```bash
-# Prérequis : Node 20+, Rust 1.75+, pnpm/npm
-git clone https://github.com/k00/zer0cod.git
-cd zer0cod
+# Prérequis : Node.js 20+, Rust 1.75+, pnpm ou npm
+# Forkez le dépôt upstream puis clonez votre fork (remplacez VOTRE_USER)
+git clone https://github.com/VOTRE_USER/Zer0cod.git
+cd Zer0cod
 
-# Installer deps frontend
+# Installer les dépendances frontend
 npm install
+# ou avec pnpm
+# pnpm install
 
-# Dev mode (hot reload frontend + backend)
+# Mode dev (hot reload frontend + backend)
 npm run tauri:dev
 
 # Build release
@@ -218,20 +228,24 @@ Zer0Cod est **ouvert aux contributions** — mais gardez à l'esprit la philosop
 > **Minimaliste par défaut. Extensible par design.**
 
 ```bash
-# 1. Fork & clone
-git clone https://github.com/VOTRE_USER/zer0cod.git
+# 1. Fork & clone (remplacez VOTRE_USER par votre nom d'utilisateur GitHub)
+git clone https://github.com/VOTRE_USER/Zer0cod.git
+cd Zer0cod
 
 # 2. Branche feature
 git checkout -b feat/ma-fonctionnalite
 
-# 3. Codez (respectez le style: oxlint + prettier)
+# 3. Installer les dépendances et coder (respectez le style: eslint + prettier)
+npm install
+# ou pnpm install
+
 npm run lint
 npm run format
 
 # 4. Test build
 npm run tauri:build
 
-# 5. PR avec description claire
+# 5. Ouvrez une Pull Request vers le dépôt upstream (k00/zer0cod) avec une description claire
 ```
 
 **Idées bienvenues :**
