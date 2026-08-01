@@ -124,24 +124,7 @@ Remarques:
 - Si vous utilisez le dépôt upstream (k00/zer0cod) remplacez l'URL par `https://github.com/k00/zer0cod/releases`.
 - Adaptez le nom de fichier (`_amd64.deb` → `_arm64.deb`) selon votre architecture.
 
-### Depuis les sources (dev)
-```bash
-# Prérequis : Node.js 20+, Rust 1.75+, pnpm ou npm
-# Forkez le dépôt upstream puis clonez votre fork (remplacez VOTRE_USER)
-git clone https://github.com/VOTRE_USER/Zer0cod.git
-cd Zer0cod
 
-# Installer les dépendances frontend
-npm install
-# ou avec pnpm
-# pnpm install
-
-# Mode dev (hot reload frontend + backend)
-npm run tauri:dev
-
-# Build release
-npm run tauri:build
-# → src-tauri/target/release/bundle/deb/zer0cod_<version>_amd64.deb
 ```
 
 ### Autres plateformes
