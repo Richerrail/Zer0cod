@@ -254,7 +254,7 @@ Zer0Cod est **ouvert aux contributions** — mais gardez à l'esprit la philosop
 
 ```bash
 # 1. Fork & clone (remplacez VOTRE_USER par votre nom d'utilisateur GitHub)
-git clone https://github.com/VOTRE_USER/Zer0cod.git
+git clone https://github.com/Richerrail/Zer0cod.git
 cd Zer0cod
 
 # 2. Branche feature
