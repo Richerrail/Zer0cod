@@ -299,3 +299,13 @@ Voir [LICENSE](LICENSE) pour détails.
 | [Lucide](https://lucide.dev/) | Icônes |
 | [Catppuccin](https://catppuccin.com/) | Palette thème Modern |
 | [VT323](https://fonts.google.com/specimen/VT323) | Police thème Retro |
+
+---
+
+## Soutenez le projet
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/richerrailk" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee">
+  </a>
+</p>
