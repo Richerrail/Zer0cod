@@ -8,7 +8,7 @@ La plupart des IDE sont **lourds, lents, et vous enferment** dans leur écosyst�
 Zer0Cod fait le pari inverse : **zéro surcharge, zéro télémétrie, zéro verrouillage**.
 
 > **Ce n'est qu'un début.**  
-> Cet IDE est conçu pour devenir **l'interface native de mon IA from scratch** — un modèle entraîné de zéro, sans dépendre d'API externes. Aujourd'hui, il vous donne un éditeur, un termin[...]
+> Cet IDE est conçu pour devenir **l'interface native de mon IA from scratch** — un modèle entraîné de zéro, sans dépendre d'API externes. Aujourd'hui, il vous donne un éditeur, un terminal, et une IA qui vit localement.
 
 ---
 
@@ -48,7 +48,7 @@ timeline
             : Marketplace plugins communautaires
 ```
 
-> **Vision finale** : Vous installez Zer0Cod → vous avez un IDE complet **ET** une IA qui comprend votre codebase, s'entraîne sur vos patterns, et tourne 100% local. Pas de cloud. Pas de compte[...]
+> **Vision finale** : Vous installez Zer0Cod → vous avez un IDE complet **ET** une IA qui comprend votre codebase, s'entraîne sur vos patterns, et tourne 100% local. Pas de cloud. Pas de compte à créer. Juste vous et votre IA.
 
 ---
 
@@ -85,49 +85,50 @@ Option recommandée — installez la release pré-compilée (.deb) si elle exist
    # aarch64 -> arm64
    ```
 
-2) Téléchargez l'asset (remplacez si nécessaire par le nom exact copié depuis la page des releases). Pour la release actuelle (tag `zer0cod`) les assets disponibles sont par exemple : `Zer0Cod_0.1.0_amd64.deb` (amd64) et `Zer0Cod_0.1.0_arm64.deb` (arm64).
+2) Téléchargez l'asset (remplacez si nécessaire par le nom exact copié depuis la page des releases). Pour la release actuelle (tag `zer0cod`) les assets disponibles sont par exemple : `Zer0Cod_0.1.0_amd64.deb` ou `Zer0Cod_0.1.0_arm64.deb`.
 
-Avec wget (exemple amd64) :
-```bash
-wget -O zer0cod_latest_amd64.deb "https://github.com/Richerrail/Zer0cod/releases/download/zer0cod/Zer0Cod_0.1.0_amd64.deb"
-```
+   Avec wget (exemple amd64) :
+   ```bash
+   wget -O zer0cod_latest_amd64.deb "https://github.com/Richerrail/Zer0cod/releases/download/zer0cod/Zer0Cod_0.1.0_amd64.deb"
+   ```
 
-Avec curl (exemple amd64) :
-```bash
-curl -L -o zer0cod_latest_amd64.deb "https://github.com/Richerrail/Zer0cod/releases/download/zer0cod/Zer0Cod_0.1.0_amd64.deb"
-```
+   Avec curl (exemple amd64) :
+   ```bash
+   curl -L -o zer0cod_latest_amd64.deb "https://github.com/Richerrail/Zer0cod/releases/download/zer0cod/Zer0Cod_0.1.0_amd64.deb"
+   ```
 
-Remarque : si vous préférez l'archive arm64, remplacez `amd64` par `arm64` dans le nom de fichier.
+   Remarque : si vous préférez l'archive arm64, remplacez `amd64` par `arm64` dans le nom de fichier.
 
 3) Installez le paquet (.deb) :
 
-Méthode recommandée (apt gère les dépendances) :
-```bash
-sudo apt install ./zer0cod_latest_amd64.deb
-```
+   Méthode recommandée (apt gère les dépendances) :
+   ```bash
+   sudo apt install ./zer0cod_latest_amd64.deb
+   ```
 
-Alternative (dpkg puis correction des dépendances) :
-```bash
-sudo dpkg -i zer0cod_latest_amd64.deb
-sudo apt-get install -f
-```
+   Alternative (dpkg puis correction des dépendances) :
+   ```bash
+   sudo dpkg -i zer0cod_latest_amd64.deb
+   sudo apt-get install -f
+   ```
 
 4) Lancer Zer0Cod :
 
-```bash
-# depuis le terminal
-zer0cod
-# ou via le lanceur d'applications (selon votre environnement de bureau)
-```
+   ```bash
+   # depuis le terminal
+   zer0cod
+   # ou via le lanceur d'applications (selon votre environnement de bureau)
+   ```
 
-Remarques:
-- Adaptez le nom de fichier (`_amd64.deb` → `_arm64.deb`) selon votre architecture.
-```
+   Remarques:
+   - Adaptez le nom de fichier (`_amd64.deb` → `_arm64.deb`) selon votre architecture.
 
 ### Autres plateformes
+
 > **Windows / macOS** : Le backend PTY utilise `nix` (Linux-only).  
-> Une version cross-platform arrive avec `portable-pty` .  
+> Une version cross-platform arrive avec `portable-pty`.  
 > En attendant, vous pouvez compiler depuis les sources sur macOS (terminal simulé).
+
 ---
 
 ## ⚙️ Configuration IA
@@ -266,7 +267,7 @@ npm run format
 # 4. Test build
 npm run tauri:build
 
-# 5. Ouvrez une Pull Request vers le dépôt upstream (k00/zer0cod) avec une description claire
+# 5. Ouvrez une Pull Request vers le dépôt upstream (Richerrail/zer0cod) avec une description claire
 ```
 
 **Idées bienvenues :**
@@ -297,4 +298,4 @@ Voir [LICENSE](LICENSE) pour détails.
 | [Allotment](https://github.com/johnwalley/allotment) | Panneaux redimensionnables |
 | [Lucide](https://lucide.dev/) | Icônes |
 | [Catppuccin](https://catppuccin.com/) | Palette thème Modern |
-| [VT323](://fonts.google.com/specimen/VT323) | Police thème Retro |
+| [VT323](https://fonts.google.com/specimen/VT323) | Police thème Retro |
